@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <script src="weatherApp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="weather-info">
+            <h2 class="city">Weather in Your City</h2>
+            <p class="date"></p>
+            <h1 class="temperature">--°C</h1>
+            <p class="description">Enter a city to get weather information</p>
+            <div class="weather-details">
+                <div class="detail">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Humidity</span>
+                    <p class="humidity">--%</p>
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Wind Speed</span>
+                    <p class="wind">-- km/h</p>
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>Clouds</span>
+                    <p class="clouds">--%</p>
+                </div>
+            </div>
+        </div>
+        <p class="error">City not found, please try again</p>
+    </div>
+</body>
+</html>
